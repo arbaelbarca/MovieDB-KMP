@@ -12,4 +12,10 @@ class MovieRepository(val clientNetwork: ClientNetwork) : IMovieRepository {
             url("popular?language=en-US")
         }
     }
+
+    override suspend fun callApiMovieDiscovery(): HttpResponse {
+        return clientNetwork.httpClient.get {
+            url("popular?language=en-US")
+        }
+    }
 }

@@ -15,6 +15,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 import movie_kmp.composeapp.generated.resources.Res
 import movie_kmp.composeapp.generated.resources.compose_multiplatform
+import org.arba.presentation.navigation.HostNavRoute
 import org.arba.presentation.ui.screen.HomeScreen
 
 @Composable
@@ -33,7 +34,7 @@ fun App() {
 //                    Text("Compose: $greeting")
 //                }
 //            }
-            HomeScreen()
+            HostNavRoute()
         }
     }
 }
