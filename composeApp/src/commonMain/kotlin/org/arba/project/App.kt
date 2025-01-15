@@ -15,7 +15,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 import movie_kmp.composeapp.generated.resources.Res
 import movie_kmp.composeapp.generated.resources.compose_multiplatform
-import org.arba.ui.screen.HomeScreen
+import org.arba.presentation.ui.screen.HomeScreen
 
 @Composable
 @Preview

@@ -1,4 +1,4 @@
-package org.arba.viewmodel
+package org.arba.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,10 +8,11 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import org.arba.data.source.remote.MovieResponse
 import org.arba.domain.repository.IMovieRepository
-import org.arba.ui.state.UiStateApi
+import org.arba.presentation.ui.state.UiStateApi
 
 class MovieViewModel(val movieRepository: IMovieRepository) : ViewModel() {
-    val mutableStateFlowMovie = MutableStateFlow<UiStateApi<MutableList<MovieResponse.Result>>>(UiStateApi.Idle)
+    val mutableStateFlowMovie = MutableStateFlow<UiStateApi<MutableList<MovieResponse.Result>>>(
+        UiStateApi.Idle)
     val stateFlowMovie: StateFlow<UiStateApi<MutableList<MovieResponse.Result>>> = mutableStateFlowMovie
 
     fun callApiDataMovie() {

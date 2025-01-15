@@ -1,4 +1,4 @@
-package org.arba.ui.item
+package org.arba.presentation.ui.item
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement

@@ -1,4 +1,4 @@
-package org.arba.ui.screen
+package org.arba.presentation.ui.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,10 +15,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import coil3.compose.LocalPlatformContext
 import org.arba.data.source.remote.MovieResponse
-import org.arba.ui.item.MovieScreenItem
+import org.arba.presentation.ui.item.MovieScreenItem
 import org.arba.utils.Type
 import org.arba.utils.getTypePlatform
-import org.arba.viewmodel.MovieViewModel
+import org.arba.presentation.viewmodel.MovieViewModel
 import org.koin.compose.viewmodel.koinViewModel
 import org.koin.core.annotation.KoinExperimentalAPI
 

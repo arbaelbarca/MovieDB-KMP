@@ -9,7 +9,7 @@ import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.bind
 import org.koin.dsl.module
 import org.arba.data.network.ClientNetwork
-import org.arba.viewmodel.MovieViewModel
+import org.arba.presentation.viewmodel.MovieViewModel
 
 val provideViewModel = module {
     viewModel { MovieViewModel(get()) }

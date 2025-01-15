@@ -1,4 +1,4 @@
-package org.arba.ui.state
+package org.arba.presentation.ui.state
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.runtime.Composable
